@@ -19,7 +19,7 @@ client = OpenAI(
 )
 model_name = os.getenv("MODEL_NAME")
 
-
+# here we define the structure of our json messages
 class Message(BaseModel):
     text: str
     role: str
